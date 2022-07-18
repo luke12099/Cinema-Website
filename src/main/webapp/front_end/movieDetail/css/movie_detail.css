@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#movie_detail_main img {
+    width: 100%;
+    height: 100%;
+}
+/* ------------- */
+#movie_detail_main{
+/*     border: 2px solid red; */
+}
+/* ------------- */
+#movie{
+/*     border: 2px solid green; */
+    display: flex;
+    /* font-family: Gill Sans MT; */
+}
+#movie_img{
+/*     border: 2px solid yellow; */
+    /* width: 1800px; */
+    justify-content: center;
+    margin-right: 10px;
+}
+#pic{
+/*     border: 2px solid palevioletred; */
+    width: 350px;
+}
+#movie_detail_1{
+/*     border: 2px solid blue; */
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+}
+#movie_detail_1 span{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
+#movie_detail_2{
+/*     border: 2px solid red; */
+    text-align: left;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 30px;
+}
+#movie_dt{
+    padding: 0px;
+}
+#movie_title{
+/*     border: 2px solid yellow; */
+    font-size: 30px;
+    background-color: #750000;
+    width:auto;
+    display:inline-block !important;
+    display:inline;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+#movie_tler{
+/* 	border: 2px solid pink; */
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	background: #FFFFFF33;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+/* 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(./logo2.jpg) repeat center/8%; */
+}
+
+
+/* ------------- */
+#booking{
+/*     border: 2px solid white; */
+    font-family: Gill Sans MT;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.picker{
+    border: 0px solid black;
+    color: white;
+    background-color: #750000;
+    /* border-radius: 10px; */
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+}
+#book{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color: #750000;
+    position: relative;
+    transition: all .3s linear;
+    /* border-radius: 10px; */
+}
+#book > button{
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+#book::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    /* border-top: 4px solid #FFF; */
+    /* border-left: 4px solid #FFF; */
+    /* opacity: 0.5; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+    /* border-radius: 10px; */
+}
+#book::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    /* border-bottom: 4px solid #FFF; */
+    /* border-right: 4px solid #FFF; */
+    /* opacity: 0.5; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease;
+    /* border-radius: 10px; */
+}
+#book:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+}
+#book:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+#book:hover{
+    background-color: red;
+}
+
+/* ------------- */
+#comment{
+/*     border: 2px solid violet; */
+}
+#cmt_info{
+/*     border: 2px solid green; */
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #750000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+#cmt_info:hover{
+    background-color: red;
+    transition: 0.3s;
+}
+#cmt_title{
+/*     border: 2px solid blue; */
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Gill Sans MT;
+}
+#cmt_avg{
+/*     border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+}
+#cmt_ttcmt{
+/* 	border: 2px solid pink; */
+	color: white;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+}
+/* #cmt_avg span:last-child{ */
+/*     color: white; */
+/*     margin-left: 10px; */
+/* } */
+#cmt_open{
+/*     border: 2px solid fuchsia; */
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    color: #FFF;
+}
+.cmt{
+/*     border: 2px solid orange; */
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    border-radius: 10px;
+	/* background-color: #FFFFFF22; */
+}
+/* .cmt::after{ */
+/*     content: ""; 沒用到仍然要寫，雙引號內容留空 */
+/*     width: 100%; 設定長方形寬度 */
+/*     height: 5px; 設定長方形高度 */
+/*     background: #750000; 設定長方形顏色 */
+/*     position: absolute; 設定與<div>區塊的相對位置 */
+/*     left: 0px; 從<div>區塊左上角起算，與左邊距離為0，即靠左的意思 */
+/*     top: 100%; 從<div>區塊左上角起算，與上方距離為100%時才開始產生這個長方形，因此長方形會在整塊<div>區塊的下方 */
+/* } */
+.member{
+/*     border: 2px solid gray; */
+    justify-items: center;
+    align-items: center;
+    /* padding-top: 5px; */
+}
+.member_pic{
+/*     border: 2px solid green; */
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+.member_pic img{
+/*     border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.member_name{
+/*     border: 2px solid rebeccapurple; */
+    /* display: flex; */
+    text-align: center;
+}
+.member_nickname{
+    color: white;
+    margin-top: 5px;
+}
+.member_id{
+    /* margin-bottom: 30%; */
+    letter-spacing: 0.5px;
+}
+.cmt_detail{
+/*     border: 2px solid violet; */
+    width: 70%;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 10px;
+    /* background-color: #750000; */
+}
+.cmt_text{
+/*     border: 2px solid yellow; */
+    color: white;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: #FFFFFF22;
+    word-wrap:break-word;
+    overflow:hidden;
+}
+.cmt_right{
+/* 	border: 2px solid purple; */
+	position: relative;
+}
+
+.cmt_star{
+/*     border: 2px solid blue; */
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 150px;
+}
+.cmt_like{
+/*     border: 2px solid green; */
+    float: left;
+    color: rgb(255, 38, 89);
+    letter-spacing: 2px;
+    margin-left: 5px;
+}
+.cmt_report{
+/* 	border: 2px solid green; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50%;
+/* 	position: absolute; */
+/* 	bottom: 0; */
+/* 	right: 0; */
+}
+.cmt_report button{
+	border: none;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #750000;
+	color: white;
+}
+.cmt_date{
+/*     border: 2px solid red; */
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: smaller;
+    float:right;
+    font-family: Gill Sans MT;
+    letter-spacing: 1px;
+}
+.hr_cmt{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+.hr-shadow {
+    border: 0;
+    padding-top: 10px;
+    color: #d0d0d5;
+    border-top: 1px solid rgba(0,0,0,.1);
+    box-shadow: inset 0 10px 10px -10px;
+}
+/* ------------- */
+#newCmt{
+/*     border: 2px solid red; */
+    display: flex;
+    margin-bottom: 10px;
+	/* border: 5px solid; */
+	padding: 1rem;
+}
+.cmt_text textarea{
+    width: 100%;
+    min-height: 200px;
+    opacity: 0.7;
+}
+.cmt_text textarea:focus{
+    opacity: 1;
+}
+#conf{
+/*     border: 2px solid paleturquoise; */
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+#netaArea{
+    /* border: 2px solid green; */
+    height: 40px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    /* display: table; */
+}
+#netabare{
+    /* border: 2px solid red; */
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    vertical-align:middle;
+    margin: auto;
+    margin-right: 10px;
+}
+#netaArea div{
+    /* border: 2px solid yellow; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.cmtBtnArea{
+    /* border: 2px solid yellow; */
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #FFF;
+    background-color: #750000;
+    position: relative;
+    transition: all .3s linear;
+    margin-left: 10px;
+    font-family: Gill Sans MT;
+    font-size: 20px;
+}
+.cmtBtnArea > input{
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    background-color: transparent;
+    border: 0px;
+    color: #FFF;
+}
+.cmtBtnArea::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    /* border-top: 1px solid #FFF; */
+    /* border-left: 1px solid #FFF; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+.cmtBtnArea::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    /* border-bottom: 1px solid #FFF; */
+    /* border-right: 1px solid #FFF; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease;
+}
+.cmtBtnArea:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+}
+.cmtBtnArea:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+.cmtBtnArea:hover{
+    background-color: red;
+}
+
+
+.fa-star, .fa-star-o{
+    color: #FFC408;
+    font-size: 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.rating-boxH1{
+    color: white;
+    font-size: 20px;
+    font-family: Gill Sans MT;
+}
+/* ------------- */
+.whiteBg:hover{
+    background-color: #FFFFFF44;
+    transition:0.3s;
+}
+/* .toRed:hover{
+    transition: all 0.3s linear;
+    background-color: red;
+} */
+.neta{
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255,255,255);
+}
+.cmt_text[value='2']{
+    color: #FFFFFF55;
+}
+.deleted{
+    color: rgba(192, 192, 192, 0.5);
+}
+
+
+
+/*新增視窗*/
+
+#newAccount{
+	border: 2px solid red;
+/*     width: calc(100% - 100px); */
+/*     height: calc(100vh - 40px - 52px); */
+    background-color: transparent;
+    position: absolute;
+    top: 52px;
+/*     left: 100px; */
+}
+
+#dataInput{
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+/*     background-color: white; */
+/*     padding: 20px; */
+/*     border-radius: 10px; */
+    text-align: center;
+/*     border: 8px solid #75000099; */
+/*     box-shadow: 0 0 10px white; */
+    
+    
+}
+
+#dataInput{
+	margin:0;
+	padding-bottom:100vh;
+	padding-top:10%;
+/* 	border: 2px solid green; */
+/*     color:rgb(56, 58, 69); */
+    font-weight: bold;
+    background: #000000CC;
+        z-index: 1;
+}
+
+#newInfo {
+	border: 2px solid yellow;
+    box-shadow: 0 0 0 0;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#newInfo table{
+    background-color: transparent;
+}
+
+#newInfo td{
+    min-width: 50px;
+    background-color: transparent;
+}
+
+#newInfo tr:nth-of-type(odd)>td{
+    background-color: transparent;
+}
+
+#newInfo input{
+    margin-right: 20px;
+    width: 120px;
+    height: 20px;
+}
+
+#newInfo input#number{
+    border-radius: 3px;
+    background-color: rgb(239, 228, 228);
+}
+#newInfo input#number:focus{
+    outline: none;
+}
+
+#newInfo select{
+    margin-right: 20px;
+    width: 124px;
+    height: 24px;
+}
+#reportDiv th, #reportDiv td{
+    border: 5px solid #750000;
+}
+#reportDiv{
+/* 	border: 2px solid red; */
+/* 	border-radius: 10px; */
+    width:600px;
+/*     border: 8px solid #75000099; */
+    box-shadow: 0 0 10px white;
+}
+#reportDiv table{
+    /* border: 2px solid red; */
+    width:100%;
+    background: #750000;
+    color: white;
+}
+#reportDiv td:nth-child(2){
+    /* margin-left: 10px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#reportDiv button{
+    text-align: center;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+#reportDiv textarea{
+	width:100%;
+}

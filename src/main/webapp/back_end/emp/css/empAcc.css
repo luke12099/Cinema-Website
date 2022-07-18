@@ -1,0 +1,274 @@
+/* 表格區域 */
+table, tr, th, td{
+    text-align: left;
+    border-collapse: collapse;
+    padding: 10px 0;
+}
+table{
+    box-shadow: 0 0 10px gray;
+    margin-left: 10px;
+    margin-bottom: 10px;
+/*     margin-top: 20px; */
+    border-radius: 10px;
+}
+th{
+    background-color: rgb(86, 92, 141);
+    color: white;
+    font-size: 20px;
+}
+th:first-of-type{
+    border-radius: 10px 0 0 0;
+    padding-left: 10px;
+}
+th:last-of-type{
+    border-radius: 0 10px 0 0;
+}
+td{
+    background-color: white;
+    font-size: 16px;
+}
+td:first-child{
+    padding-left: 10px;
+}
+tr:nth-of-type(odd)>td{
+    background-color: rgb(212, 221, 230);
+}
+tr:last-of-type>td:first-of-type{
+    border-radius: 0 0 0 10px;
+}
+tr:last-of-type>td:last-of-type{
+    border-radius: 0 0 10px 0;
+}
+.lastTr>td:first-of-type{
+    border-radius: 0 0 0 10px;
+}
+.lastTr>td:last-of-type{
+    border-radius: 0 0 10px 0;
+}
+.oddTr>td{
+    background-color: white !important; 
+}
+.evenTr>td{
+    background-color: rgb(212, 221, 230) !important;
+}
+th.tb0{
+    width:100px;
+}
+th.tb1{ 
+    width:100px;
+}
+th.tb2{
+    width:100px;
+}
+th.tb3{
+    width:150px;
+}
+th.tb4{
+    width:450px;
+}
+
+/* 新增按鈕 */
+button.add{
+    background-color: rgb(86, 92, 141);
+    border: 0;
+    font-size: 20px;
+    color: white;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    top: -35px;
+    left: 200px;
+}
+button.add:hover{
+    box-shadow: 0 0 4px rgb(212, 221, 230) inset;
+    text-shadow: 1px 1px 2px rgb(212, 221, 230);
+}
+button.add:active{
+    box-shadow: 0 0 4px rgb(68, 77, 87) inset;
+    text-shadow: 1px 1px 2px rgb(77, 84, 91);
+    color: rgb(190, 191, 216);
+}
+
+/* 新增員工區塊 */
+#newAccount{
+    width: calc(100% - 100px);
+    height: calc(100vh - 40px - 52px);
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+    left: 100px;
+}
+
+#dataInput{
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(131, 146, 188);
+    box-shadow: 0 0 10px gray;
+}
+
+#dataInput{
+    color:rgb(56, 58, 69);
+    font-weight: bold;
+}
+
+#newInfo {
+    box-shadow: 0 0 0 0;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#newInfo table{
+    background-color: transparent;
+}
+
+#newInfo td{
+    min-width: 50px;
+    background-color: transparent;
+}
+
+#newInfo tr:nth-of-type(odd)>td{
+    background-color: transparent;
+}
+
+#newInfo input{
+    margin-right: 20px;
+    width: 120px;
+    height: 20px;
+}
+
+#newInfo input#number{
+    border-radius: 3px;
+    background-color: rgb(239, 228, 228);
+}
+#newInfo input#number:focus{
+    outline: none;
+}
+
+#newInfo select{
+    margin-right: 20px;
+    width: 124px;
+    height: 24px;
+}
+/* 權限 */
+#auth{
+    text-align: left;
+}
+
+.big{
+    font-size: 24px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.fc_block{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+/* 確認&取消按鈕 */
+#dataInput div button{
+    margin: 20px 10px 0 10px;
+    background-color: rgb(86, 92, 141);
+    border: 0;
+    font-size: 20px;
+    color: white;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#dataInput div button:hover{
+    box-shadow: 0 0 4px rgb(212, 221, 230) inset;
+    text-shadow: 1px 1px 2px rgb(212, 221, 230);
+}
+
+#dataInput div button:active{
+    box-shadow: 0 0 4px rgb(68, 77, 87) inset;
+    text-shadow: 1px 1px 2px rgb(77, 84, 91);
+    color: rgb(190, 191, 216);
+}
+
+/* 查看/修改、重設密碼、刪除按鈕 */
+button.see, button.edit, button.resetPw, button.delete{
+    margin: 0 5px;
+    padding: 0 7px;
+    background-color: rgb(86, 92, 141);
+    border: 0;
+    font-size: 16px;
+    color: white;
+    height: 35px;
+    border-radius: 5px;
+}
+
+button.see:hover, button.edit:hover, button.resetPw:hover, button.delete:hover{
+    box-shadow: 0 0 4px rgb(212, 221, 230) inset;
+    text-shadow: 1px 1px 2px rgb(212, 221, 230);
+    cursor: pointer; 
+}
+
+button.see:active, button.edit:active, button.resetPw:active, button.delete:active{
+    box-shadow: 0 0 4px rgb(68, 77, 87) inset;
+    text-shadow: 1px 1px 2px rgb(77, 84, 91);
+    color: rgb(190, 191, 216);
+}
+
+/* 重設密碼框 */
+input#empNumber, input#newPassword{
+    margin: 10px;
+    width: 120px;
+    height: 20px;
+}
+input#empNumber{
+    border-radius: 3px;
+    background-color: rgb(239, 228, 228);
+}
+input#empNumber:focus{
+    outline: none;
+}
+
+/* form */
+#main form{
+	display: inline;
+}
+
+/* search */
+div#search{
+	width: 200px;
+	position: relative;
+	top: -28px;
+    left: 650px;
+}
+
+#listOrder{
+	background-color: rgb(86, 92, 141);
+    color: white;
+    font-size: 20px;
+    border: 0px;
+}
+
+#listOrder:hover{
+	cursor: pointer;
+}
+
+/* 修改狀態欄位 */
+#statusInput{
+	position: fixed;
+    top: 35vh;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgb(131, 146, 188);
+    box-shadow: 0 0 10px gray;
+}

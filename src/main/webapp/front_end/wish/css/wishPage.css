@@ -1,0 +1,133 @@
+/* a 標籤 */
+
+button#historyWish {
+    background-color: rgb(86, 92, 141);
+    border: 0;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    top: -38px;
+    left: 240px;
+}
+
+button#historyWish:hover {
+    box-shadow: 0 0 4px rgb(212, 221, 230) inset;
+    text-shadow: 1px 1px 2px rgb(212, 221, 230);
+}
+
+button#historyWish:active {
+    box-shadow: 0 0 4px rgb(68, 77, 87) inset;
+    text-shadow: 1px 1px 2px rgb(77, 84, 91);
+    color: rgb(190, 191, 216);
+}
+
+#historyWish>a {
+    text-decoration: none;
+}
+
+#historyWish>a:active {
+    color: rgb(190, 191, 216);
+}
+
+#historyWish>a:link,
+#historyWish>a:visited {
+    color: white;
+}
+
+
+/* 查詢區 */
+
+div#multiSearch {
+    margin-bottom: 10px;
+}
+
+div#multiSearch button {
+    background-color: rgb(86, 92, 141);
+    border: 0;
+    font-size: 16px;
+    color: white;
+    height: 24px;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+div#multiSearch button:hover {
+    box-shadow: 0 0 4px rgb(212, 221, 230) inset;
+    text-shadow: 1px 1px 2px rgb(212, 221, 230);
+}
+
+div#multiSearch button:active {
+    box-shadow: 0 0 4px rgb(68, 77, 87) inset;
+    text-shadow: 1px 1px 2px rgb(77, 84, 91);
+    color: rgb(190, 191, 216);
+}
+
+div#multiSearch label,
+div#multiSearch select,
+div#multiSearch option {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+
+/* 許願池活動清單 */
+
+div#wishList {
+    width: 830px;
+    background-color: white;
+    margin: 5px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(122, 140, 143);
+}
+
+th {
+    padding: 3px;
+}
+
+div#wishList th {}
+
+div#wishList tr:nth-of-type(even)>td {
+    background-color: rgb(218, 229, 208);
+}
+
+td {
+    width: 120px;
+    text-align: center;
+    padding: 3px 8px;
+}
+
+td:nth-of-type(2), 
+td:nth-of-type(3),
+td:nth-of-type(4) {
+    width: 150px;
+}
+
+td:nth-of-type(1),
+td:nth-of-type(5),
+td:nth-of-type(6) {
+    width: 80px;
+}
+
+td:first-of-type {
+    text-align: center;
+}
+
+div#wishList img {
+    width: 30px;
+}
+
+td>form>button{
+	background-color: transparent;
+	border: 0px;
+}
+
+#main{
+	background-color: rgb(252, 245, 235);
+	padding: 20px;
+}

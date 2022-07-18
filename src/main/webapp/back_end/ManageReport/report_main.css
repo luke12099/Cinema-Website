@@ -1,0 +1,11 @@
+.notifybox {
+    display: flex;
+    justify-content: flex-start;
+    padding:15px;
+}
+.alertbox {
+    width: 30%;
+}
+.tablebox{
+  padding: 15px;
+}

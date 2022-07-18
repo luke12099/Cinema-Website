@@ -1,0 +1,33 @@
+main {
+    box-sizing: border-box;
+    margin-top: calc(52px + 10px);
+    margin-left: calc(100px + 15px);
+    width: calc(100% - 100px - 15px);
+    height: calc(100vh - 40px - 52px - 10px);
+    min-height: 470px;
+    overflow: scroll;
+}
+/* scrollbar樣式 */
+main::-webkit-scrollbar {
+    width: 7px;
+}
+
+main::-webkit-scrollbar-button {
+background: transparent;
+border-radius: 4px;
+}
+
+main::-webkit-scrollbar-track-piece {
+background: transparent;
+}
+
+main::-webkit-scrollbar-thumb {
+border-radius: 4px;
+background-color: rgba(0, 0, 0, 0.4);
+border: 1px solid slategrey;
+}
+
+main::-webkit-scrollbar-track {
+box-shadow: transparent;
+}
+/* 你可以針對 <main>標籤內自己的內容寫 CSS，以免跑版 */

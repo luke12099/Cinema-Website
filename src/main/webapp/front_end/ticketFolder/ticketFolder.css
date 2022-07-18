@@ -1,0 +1,128 @@
+
+.order_container{
+    font-family: 'Roboto',sans-serif;
+    background: #f3f2f3;
+    padding:0px 20px 0px 20px;
+    margin-bottom: 10px;
+}
+.mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0px auto;
+}
+.mytabs label{
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+.mytabs input[type="radio"]{
+    display: none;
+}
+.mytabs input[type="radio"]:checked + label + .container{
+    display: flex;
+}
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+  }
+
+
+
+.container{
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    width: 100%;
+    padding:0px 120px 0px 150px;
+    order: 1;
+    display: none;
+}
+.content{
+    box-sizing: border-box;
+    width: 250px;
+    margin: 15px 15px 40px 15px;
+
+    float: left;
+    padding-top: 15px;
+    border-radius: 20px;
+    padding-top:10px ;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+
+}
+.content:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px,-8px);
+}
+
+.cover img{
+    display: block;
+    width: 215px;
+    height: 307px;
+    padding: 3px;
+    margin: 0px 10px 0px 15px;
+}
+.info_container {
+    display: flex;
+    margin: 14px;
+    height: 100px;
+}
+.info {
+    flex: none;
+    width: 100%;
+}
+.icon_container {
+	display: flex;
+	margin-top: 10px;
+}
+.ticket_icon img{
+    width: 30px;
+    height: 30px;
+}
+.food_icon {
+	margin-left: 10px
+}
+.food_icon img{
+    width: 30px;
+    height: 30px;
+}
+.mvName{
+    /* border: solid blue; */
+    font-weight: 500;
+    font-size: 20px;
+    box-sizing: border-box;
+    
+     overflow: hidden;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.hlName{
+    /* border: solid red; */
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 0 8px;
+
+}
+
+/* 查看電影詳情按鈕 */
+.bt button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color: #b73a5c;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+

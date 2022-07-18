@@ -1,0 +1,105 @@
+/* 票數結果 */
+
+div#vote {
+    background-color: white;
+    margin: 5px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(122, 140, 143);
+}
+
+div.color {
+    margin: 5px 0;
+    white-space: nowrap;
+    color: rgb(58, 56, 69);
+}
+
+
+/* 訊息區 */
+
+div#message {
+    background-color: white;
+    margin: 5px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(122, 140, 143);
+}
+
+th {
+    padding: 3px;
+}
+
+div#message th#memNo {
+    min-width: 100px;
+    width: 10vh;
+}
+
+div#message th#memMsg {
+    width: 100%;
+}
+
+div#message tr:nth-of-type(even)>td {
+    background-color: rgb(218, 229, 208);
+}
+
+td {
+    padding: 3px 8px;
+}
+
+td:first-of-type {
+    text-align: center;
+}
+
+
+/* 間隔 */
+
+div#main h2 {
+    margin: 15px 0;
+}
+
+div#main h2:first-of-type {
+    margin-top: 0;
+}
+
+
+/* a 標籤 */
+
+button#return {
+    background-color: rgb(86, 92, 141);
+    border: 0;
+    font-size: 20px;
+    color: white;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    top: -38px;
+    left: 300px;
+}
+
+button#return:hover {
+    box-shadow: 0 0 4px rgb(212, 221, 230) inset;
+    text-shadow: 1px 1px 2px rgb(212, 221, 230);
+}
+
+button#return:active {
+    box-shadow: 0 0 4px rgb(68, 77, 87) inset;
+    text-shadow: 1px 1px 2px rgb(77, 84, 91);
+    color: rgb(190, 191, 216);
+}
+
+#return>a {
+    text-decoration: none;
+}
+
+#return>a:active {
+    color: rgb(190, 191, 216);
+}
+
+#return>a:link,
+#return>a:visited {
+    color: white;
+}
+

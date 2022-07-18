@@ -1,0 +1,302 @@
+
+.all *{
+	box-sizing: border-box;
+	text-decoration:none;
+}
+.all {
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    border-radius: 5px;
+    background: rgba(198, 155, 123,0.2);
+/*     border: 5px solid #000; */
+
+    width: 900px;
+}
+
+
+/* 首欄開始====================================== */
+.guide1outer,
+.guide2outer {
+    margin: 20px;
+    /* 跟其他的空隙 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.guide1 {
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(130, 111, 102, 0.9);
+    width: 500px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* 次欄開始====================================== */
+.guide2 {
+    width: 750px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.guide2inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.state1,
+.state2,
+.state3,
+.state4,
+.state5 {
+    background-color: #1b1b1b;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+
+}
+
+.state1outer,
+.state2outer,
+.state3outer,
+.state4outer,
+.state5outer {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* 可選擇 */
+.state1 {
+    background-color: #5c86eb;
+}
+
+/* 已售出 */
+.state2 {
+    background-color: lightcoral;
+}
+
+/* 您的座位 */
+.state3 {
+    background-color: lightgreen;
+}
+
+/* 保留位 */
+.state4 {
+    background-color: rgb(255, 255, 83);
+}
+
+/* 維修中 */
+.state5 {
+    background-color: gray;
+}
+
+
+
+/* 座位開始============================================================== */
+
+.SeatOuter {
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.front {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.screen {
+    border-radius: 5px;
+    width: 400px;
+    height: 20px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.screeninner {
+    color: white;
+}
+
+
+
+
+
+
+.seatSelection {
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+}
+
+.seatsReceipt {
+    text-align: center;
+}
+
+.seatNumber {
+    display: inline;
+    padding: 10px;
+    background-color: #5c86eb;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: default;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.seatRow {
+    padding: 10px;
+}
+
+
+.seatSelected {
+    background-color: lightgreen;
+    color: black;
+}
+
+.seatUnavailable {
+    background-color: lightcoral;
+}
+
+.seatReserved {
+    background-color: rgb(255, 255, 83);
+    color: #000;
+}
+
+.seatConstruction {
+    background-color: gray;
+}
+
+
+
+.seatRowNumber {
+    clear: none;
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+.seatsAmount {
+    max-width: 2em;
+}
+
+.aisle {
+    visibility: hidden;
+}
+
+
+
+/* 側邊開始============================================================== */
+.temporaryInf {
+    height: 600px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.sidetable {
+    width: 150px;
+    border-collapse: collapse;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+
+
+
+.receiptouter {
+	position: fixed;
+	right: 10%;
+	top: 23%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.all li {
+    display: block;
+    margin: .5em 0;
+    background: #ddd;
+    color: #444;
+    border-radius: .3em;
+}
+
+/* 按鈕開始============================================================== */
+
+button {
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+
+.bt {
+    padding: 15px 20px;
+    /* 按鈕大小 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+/*     background-image: linear-gradient(45deg, #000000 0%, #7c7c7c 51%, #000000 100%); */
+	background: rgb(198, 155, 123);
+    cursor: pointer;
+}
+
+.bt:hover {
+    background-position: right center;
+    /* 變色方向 */
+    color: #fff;
+    text-decoration: none;
+}
+
+.bt:active {
+    transform: scale(0.95);
+}
+
+.btBlock {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}

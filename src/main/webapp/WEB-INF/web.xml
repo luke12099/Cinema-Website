@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>CGA102G1</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+    <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/TestDB</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <filter>
+  <filter-name>xxx</filter-name>  <!-- 可以自己取名 -->
+  <filter-class>com.filters.MemberFilter</filter-class>
+<!--   <init-param> -->
+<!--   <param-name>初始參數</param-name> -->
+<!--   <param-value>初始參數的值</param-value> -->
+<!--   </init-param> -->
+  </filter> 
+    
+  <filter-mapping>
+  <filter-name>xxx</filter-name> <!-- 可以自己取名 -->
+  
+  <!-- url-pattern 放要濾掉的 jsp-->
+  <url-pattern>/front_end/membercentre/membercentre.jsp</url-pattern> 
+  <url-pattern>/front_end/membercentre/membermod.jsp</url-pattern>
+  <url-pattern>/front_end/tk_ord/chooseSeat.jsp</url-pattern>
+   <url-pattern>/front_end/tk_ord/chooseTk.jsp</url-pattern>
+   <url-pattern>/front_end/tk_ord/completeOrder.jsp</url-pattern>
+   <url-pattern>/front_end/tk_ord/confirmOrder.jsp</url-pattern>
+   <url-pattern>/front_end/tk_ord/creditCard.jsp</url-pattern>
+   <url-pattern>/front_end/tk_ord/sellTK.jsp</url-pattern>
+   <url-pattern>/front_end/merchandise/merchOrd_index.jsp</url-pattern>
+   <url-pattern>/front_end/wish/wishPage.jsp</url-pattern>
+   <url-pattern>/front_end/wish/wishDetail.jsp</url-pattern>
+   <url-pattern>/front_end/wish/voteWish.jsp</url-pattern>
+   
+<!--   <servlet-name>*</servlet-name> -->
+  <dispatcher>REQUEST</dispatcher>
+  <dispatcher>FORWARD</dispatcher>
+  <dispatcher>INCLUDE</dispatcher>
+  <dispatcher>ERROR</dispatcher>
+  <dispatcher>ASYNC</dispatcher>
+  </filter-mapping>
+  
+  <filter>
+  <filter-name>EmpFilter</filter-name>  <!-- 可以自己取名 -->
+  <filter-class>com.filters.EmpFilter</filter-class>
+  </filter> 
+  <filter-mapping>
+  <filter-name>EmpFilter</filter-name> <!-- 可以自己取名 -->
+  <url-pattern>/back_end/*</url-pattern> 
+  <dispatcher>REQUEST</dispatcher>
+  <dispatcher>FORWARD</dispatcher>
+  <dispatcher>INCLUDE</dispatcher>
+  <dispatcher>ERROR</dispatcher>
+  <dispatcher>ASYNC</dispatcher>
+  </filter-mapping>
+  
+  <filter>
+  <filter-name>EmpPrivilegeFilter</filter-name>  <!-- 可以自己取名 -->
+  <filter-class>com.filters.EmpPrivilegeFilter</filter-class>
+  </filter> 
+  <filter-mapping>
+  <filter-name>EmpPrivilegeFilter</filter-name> <!-- 可以自己取名 -->
+  <url-pattern>/back_end/*</url-pattern> 
+  <dispatcher>REQUEST</dispatcher>
+  <dispatcher>FORWARD</dispatcher>
+  <dispatcher>INCLUDE</dispatcher>
+  <dispatcher>ERROR</dispatcher>
+  <dispatcher>ASYNC</dispatcher>
+  </filter-mapping>
+</web-app>

@@ -1,0 +1,161 @@
+.all *{
+ box-sizing: border-box;
+ text-decoration:none
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    color: #000;
+
+}
+
+.main {
+    border-radius: 15px;
+    border: 5px solid #000;
+    width: 1200px;
+}
+
+
+
+/* 導覽開始====================================== */
+
+.guide1outer {
+    margin: 20px;
+    /* 跟其他的空隙 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.guide1 {
+    border-radius: 15px;
+    color: white;
+    background-color: #1b1b1b;
+    width: 800px;
+    height: 100px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* 票價開始====================================== */
+
+
+.TKouter {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.TKinner {
+    border-collapse: collapse;
+    border: 2px solid #000;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+tr {
+    height: 50px;
+}
+
+td {
+    width: 200px;
+}
+
+tr:nth-child(odd) {
+    background: #d9d9d9;
+}
+
+tr:nth-child(even) {
+    background: rgb(255, 255, 255);
+}
+
+tr:nth-child(1) {
+    background: rgb(58, 58, 58);
+    color: white;
+}
+
+
+
+.Address{
+	width: 250px;
+}
+
+/* 按鈕開始====================================== */
+
+
+.bt {
+    text-decoration: none;
+    padding: 15px 20px;
+    /* 按鈕大小 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #000000 0%, #7c7c7c 51%, #000000 100%);
+    cursor: pointer;
+}
+
+.bt:hover {
+    background-position: right center;
+    /* 變色方向 */
+    color: #fff;
+    text-decoration: none;
+}
+
+.bt:active {
+    transform: scale(0.95);
+}
+
+.btBlock {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* table按鈕開始====================================== */
+.tablebt {
+    text-decoration: none;
+    padding: 10px 10px;
+    /* 按鈕大小 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, #000000 0%, #7c7c7c 51%, #000000 100%);
+    cursor: pointer;
+}
+
+.tablebt:hover {
+    background-position: right center;
+    /* 變色方向 */
+    color: #fff;
+    text-decoration: none;
+}
+
+.tablebt:active {
+    transform: scale(0.95);
+}
+
+/*照片大小格式 css調整 */
+td img{
+	height:100%;
+	width:100%
+}
+

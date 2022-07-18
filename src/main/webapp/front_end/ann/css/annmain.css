@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+p,
+a,
+span,
+li,
+label {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#intro .jumbotron {
+    background-image: url(../images/pexels-markus-spiske-11026542.jpg);
+    /* background-size: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 70vh;
+    margin-bottom: 0px;
+}
+
+#intro .jumbotron .container {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}

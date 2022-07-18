@@ -1,0 +1,47 @@
+.form1 {
+    border: 1px solid rgb(160, 157, 157);
+    background-color: gainsboro;
+    width: 1000px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+}
+.mvId{
+    margin: 5px;
+}
+.mvName {
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 5px;
+}
+
+.mvLevel {
+    /* border: 1px solid orange; */
+    display: flex;
+    margin: 5px;
+}
+
+.mvDate {
+    /* border: 1px solid yellow; */
+    display: flex;
+    margin: 5px;
+}   
+
+.mvCast {
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: 5px;
+}
+
+.mvInfo{
+    /* border: 1px solid purple; */
+    margin: 5px;
+
+}
+.mvPc {
+    display: flex;
+}
+.mvPc img{
+    width: 20%;
+}

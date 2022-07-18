@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 800px;
+    min-height: 500px;
+    background-color: rgb(252, 245, 235);
+    color: rgb(92, 71, 38);
+}
+
+header {
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    text-align: left;
+    background-color: rgb(56, 58, 69);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#logo {
+    display: flex;
+    width: 100px;
+    height: 52px;
+    font-size: 0;
+}
+
+#logo>img {
+    width: 100%;
+}
+
+header h2 {
+    padding: 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+header ul {
+    padding: 10px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+header>nav>ul {
+    padding: 6px;
+}
+
+header>nav>ul>li {
+    list-style: none;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    border-left: 1px dashed white;
+    line-height: 40px;
+}
+
+header>nav>ul>li:hover {
+    text-shadow: 0 0 20px rgb(253, 255, 117);
+    color: rgb(240, 211, 211);
+    cursor: pointer;
+}
+
+header>nav>ul>li:active {
+    text-shadow: 0 0 20px rgb(29, 21, 21);
+    color: rgb(206, 166, 166);
+}
+
+aside {
+    display: flex;
+    position: absolute;
+    top: 52px;
+    height: calc(100vh - 40px - 52px);
+    min-height: 480px;
+    background-color: rgb(198, 155, 123);
+}
+
+aside>ul>li {
+    list-style: none;
+    background-color: rgb(198, 155, 123);
+    color: white;
+    width: 100px;
+    font-size: 18px;
+    position: relative;
+    border-bottom: 1px dashed white;
+}
+
+aside>ul>li:hover {
+    background-color: rgb(130, 111, 102);
+    color: white;
+    cursor: pointer;
+}
+
+#index:active {
+    color: rgb(206, 166, 166);
+}
+
+aside>ul>li>span {
+    display: block;
+    padding: 10px 10px;
+    text-shadow: 0 0 5px rgb(87, 53, 53);
+}
+
+aside>ul>li>ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+aside>ul>li:hover>ul {
+    display: block;
+    z-index: 10;
+}
+
+aside>ul>li>ul>li {
+    list-style: none;
+    background-color: rgb(247, 204, 172);
+    width: 120px;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-bottom: 1px dashed white;
+    text-shadow: 0 0 5px rgb(87, 53, 53);
+}
+
+aside>ul>li>ul>li:last-child {
+    border-bottom: 0;
+}
+
+aside>ul>li>ul>li:hover {
+    background-color: rgb(158, 137, 128);
+    color: white;
+    cursor: pointer;
+}
+
+aside>ul>li>ul>li:active {
+    color: rgb(206, 166, 166);
+}
+
+#tree {
+    width: 100%;
+    height: 25px;
+    float: left;
+    left: 0;
+    bottom: 40px;
+    background-image: url(icons8-leaf-64.png);
+}

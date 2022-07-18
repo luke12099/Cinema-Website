@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(252, 245, 235);
+    background-image: url(/CGA102G1/back_end/logo2noline.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 20px;
+    background-size: 500px;
+    color: rgb(92, 71, 38);
+}
+
+main{
+    position: relative;
+    height: calc(100vh - 40px - 200px);
+    min-height: 300px;
+}
+
+#login {
+    margin-top: 200px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 10px 10px;
+    width: 200px;
+    height: 40px;
+}
+
+button {
+    margin: 20px 10px;
+    width: 80px;
+    height: 40px;
+    color: rgb(92, 71, 38);
+    font-weight: bold;
+    background-color: rgb(172, 153, 121);
+    border: 0;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(92, 71, 38);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(92, 71, 38);
+    box-shadow: 2px 2px 2px rgb(172, 153, 121) inset;
+    text-shadow: 2px 2px 2px rgb(172, 153, 121);
+}
+
+

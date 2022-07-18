@@ -1,0 +1,48 @@
+
+.title{
+    font-family: Palatino Linotype;
+    font-size: 30px;
+    margin-top: 10px;
+    color: white;
+    background-color: #750000;;
+}
+.title span{
+    margin-left: 20px;
+}
+.detail{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    /* background-color: rgba(164, 0, 0, 0.333); */
+    /* font-size: 1.6rem; */
+	/* display: grid; */
+	place-items: center;
+	/* min-height: 200px; */
+	border: 8px solid;
+	padding: 1rem;
+    border-image: linear-gradient(to bottom, rgb(224, 64, 115), rgb(255, 47, 47)) 0 1;
+}
+#info_title{
+    /* border: 2px solid red; */
+}
+#cmn_dt{
+    /* border: 2px solid blue */
+}
+#cmn_lc{
+    /* border: 2px solid green */
+    position: relative;
+    min-height: 300px;
+}
+#cmn_lc iframe{
+    position: absolute;
+    right: 100px;
+}
+#cmn_tpr{
+    /* border: 2px solid orange */
+}
+#cmn_em{
+    /* border: 2px solid violet */
+}
+#cmn_tel{
+    /* border: 2px solid brown */
+}

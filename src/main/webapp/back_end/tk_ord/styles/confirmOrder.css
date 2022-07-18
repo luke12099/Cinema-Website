@@ -1,0 +1,199 @@
+.all *{
+	box-sizing: border-box;
+	text-decoration:none;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    border-radius: 5px;
+/*     border: 5px solid #000; */
+    background: rgba(198, 155, 123, 0.2);
+    width: 900px;
+}
+
+
+/* 首欄開始====================================== */
+
+.showingInf {
+    margin: 10px 0 0 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.showmain {
+    width: 400px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.showside {
+    width: 400px;
+}
+
+.showtime,
+.hellname,
+.seats {
+    height: 33%;
+}
+
+.showinner,
+.showname,
+.showtime,
+.hellname,
+.seats,
+.showmain{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* 導覽開始====================================== */
+
+.guide1outer {
+    margin: 20px;
+    /* 跟其他的空隙 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.guide1 {
+    border-radius: 5px;
+	color: white;
+	background-color: rgba(130, 111, 102, 0.9);
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* 表格開始====================================== */
+
+.TKouter {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.TKinner {
+    border-collapse: collapse;
+/*     border: 2px solid #000; */
+    text-align: center;
+    height: 100%;
+    width: 90%;
+}
+th{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: rgba(130, 111, 102, 0.9);
+    color: white;
+}
+td{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+tr:nth-child(odd) {
+    background: #d9d9d9;
+}
+
+tr:nth-child(even) {
+    background: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+.checkout {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* 側邊開始============================================================== */
+
+
+
+.temporaryInf {
+    height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.sidetable {
+    width: 150px;
+    border-collapse: collapse;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+
+
+
+/* 按鈕開始====================================== */
+
+.btBlock {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.bt {
+    margin: 20px;
+    padding: 15px 20px;
+    /* 按鈕大小 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+/*     background-image: linear-gradient(45deg, #000000 0%, #7c7c7c 51%, #000000 100%); */
+	background: rgb(198, 155, 123);
+    cursor: pointer;
+}
+
+.bt:hover {
+    background-position: right center;
+    /* 變色方向 */
+    color: #fff;
+    text-decoration: none;
+}
+
+.bt:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,210 @@
+.all *{
+	box-sizing: border-box;
+	text-decoration:none;
+}
+
+.all {
+	display: flex;
+	justify-content: center;
+}
+
+.main {
+	border-radius: 10px;
+	border: 5px solid transparent;
+	background: rgba(198, 155, 123, 0.2);
+	width: 800px;
+}
+input{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* 首欄開始====================================== */
+.showingInf {
+	margin: 10px 0 0 0;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.showmain {
+	width: 400px;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.showside {
+	width: 400px;
+}
+
+.showname, .showtime, .hellname, .showmain {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.showtime, .hellname {
+	height: 50%;
+	/* 視情況調整 */
+}
+
+/* 導覽開始====================================== */
+.guide1outer, .guide2outer {
+	margin: 20px;
+	/* 跟其他的空隙 */
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.guide1, .guide2 {
+	border-radius: 5px;
+	color: white;
+	background-color: rgba(130, 111, 102, 0.9);
+/* 	width: 400px; */
+	padding-right: 50px;
+	padding-left: 50px;
+	height: 60px;
+	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+/* 選票開始====================================== */
+.TKouter {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 200px;
+}
+
+.TKinner {
+	border-collapse: collapse;
+/* 	border: 2px solid #000; */
+	text-align: center;
+	height: 100%;
+	width: 750px;
+}
+
+tr:nth-child(odd) {
+	background: #d9d9d9;
+}
+
+tr:nth-child(even) {
+	background: rgb(255, 255, 255);
+}
+
+tr:nth-child(1) {
+	background: rgba(130, 111, 102, 0.9);
+	color: white;
+}
+
+/* 食物開始====================================== */
+.FD {
+	height: 410px;
+}
+
+.items {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.item {
+	height: 200px;
+	width: 180px;
+}
+
+.img_block img {
+	border-radius: 5px;
+}
+
+.img_block {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.iteminner {
+	text-align: center;
+}
+
+.FDInput {
+	width: 3em;
+}
+
+/* 側邊資訊開始====================================== */
+.temporaryInf {
+	height: 600px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.temporaryTable {
+	position: fixed;
+	right: 10%;
+	top: 40%;
+	width: 8em;
+	margin-top: -2.5em;
+}
+
+.sidetable, .tablehead {
+	width: 180px;
+	border-collapse: collapse;
+	border: 0.5px solid #FFF;
+	text-align: center;
+}
+
+.tablehead {
+	background: rgba(130, 111, 102, 0.9);
+	color: #fff;
+}
+
+/* 按鈕開始====================================== */
+.bt {
+	padding: 15px 20px;
+	/* 按鈕大小 */
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 5px;
+	font-weight: blod;
+/* 	background-image: linear-gradient(45deg, #000000 0%, #7c7c7c 51%, #000000 100%); */
+	background: rgb(198, 155, 123);
+	cursor: pointer;
+}
+
+.bt:hover {
+	background-position: right center;
+	/* 變色方向 */
+	color: #fff;
+	text-decoration: none;
+}
+
+.bt:active {
+	transform: scale(0.95);
+}
+
+.btBlock {
+	margin: 20px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}

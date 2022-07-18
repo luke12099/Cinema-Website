@@ -1,0 +1,33 @@
+div#title {
+	background-color: antiquewhite;
+/* 	border: 1px solid rgb(198, 155, 123); */
+/*     border: 2px solid black; */
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  table#table-1 h4 {
+    color: red;
+    display: block;
+    margin-bottom: 1px;
+  }
+  h4 {
+    color: blue;
+    display: inline;
+  }
+  table {
+	width: 800px;
+	background-color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+  }
+  table, th, td {
+/*     border: 1px solid #CCCCFF; */
+  }
+  th, td {
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+  }

@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#mainDiv{
+/* 	border: 2px solid yellow; */
+	background-color: black;
+	height: 100%;
+	color: white;
+/* 	overflow: hidden; */
+}
+#cartMain{
+/*     border: 2px solid red; */
+    margin: 30px;
+    /* background-color: black; */
+    background: #000;
+    width:100%;
+/*     height: 100vh; */
+/*     overflow-y: scroll; */
+    padding-right: 10px;
+    position: relative;
+}
+#cartTitle{
+/*     border: 1px solid white; */
+    border-radius: 10px;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #750000;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    margin-right: 10px;
+/*     position:sticky; */
+/*     top:0px; */
+}
+
+/* #cartTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+  } */
+  .gradient-border {
+    --borderWidth: 3px;
+    background: #ffffff;
+    position: relative;
+    border-radius: var(--borderWidth);
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+#cartTitle > div{
+/*     border: 2px solid orange; */
+    text-align:center;
+}
+#cartBody{
+/*     border: 2px solid chartreuse; */
+	border-radius: 10px;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-right: 3px;
+    padding-right: 5px;
+}
+.line{
+	position: relative;
+	height: 1px;
+	border-width: 0;
+	background-image: -webkit-linear-gradient(left,transparent 0%,#939393 50%,transparent 100%);
+	background-image: linear-gradient(90deg,transparent 0%,#939393 50%,transparent 100%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: sticky;
+}
+.eachItem{
+    /* border: 2px solid purple; */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    display: flex;
+    height: 200px;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+
+}
+.eachItem:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 1s;
+}
+.eachItem > div{
+    /* border: 2px solid pink; */
+    margin: auto;
+    /* height: inherit; */
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+.check{
+    width: 5%;
+}
+.no{
+    width: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* height: inherit; */
+}
+.name{
+    width: 15%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.info{
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.status{
+    width: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.edit{
+    width: 15%;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    text-align:center;
+    vertical-align: middle;
+    /* margin-top: 90px; */
+    /* margin-bottom: 50%; */
+}
+input[type="number"]{
+    width: 50px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    align-items: center;
+    text-align:center;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* margin-top: 90px; */
+}
+input[value="刪除"]{
+    border: 1px solid white;
+    border-radius: 5px;
+    align-items: center;
+    text-align:center;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #750000;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: white;
+    /* margin-top: 90px; */
+}
+.vl{
+    height:60%;
+    width:3px;
+    border-width:0;
+    color:white;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+#cartArea{
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    /* height: 100px; */
+    position: relative;
+}
+#cartBtn{
+    /* border: 2px solid greenyellow; */
+    position:absolute;
+    right: 0;
+
+}
+#total{
+    /* border: 2px solid blue; */
+    position: absolute;
+    right: 200px;
+}
+.button {
+    /* display: inline-block; */
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: #750000;
+    /* border: none; */
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    /* float: right; */
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  
+  /* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

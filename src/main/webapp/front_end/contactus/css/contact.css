@@ -1,0 +1,72 @@
+bg-color {
+    background-color: #fdf1f5
+}
+
+container {
+    max-width: 1280px
+}
+
+page-title-area {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 0;
+    text-align: center;
+    z-index: 1
+}
+
+page-title-area .page-title-content {
+    -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+    padding: 30px
+}
+
+page-title-area .page-title-content h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-weight: 700
+}
+
+page-title-area .page-title-content ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 0
+}
+
+page-title-area .page-title-content ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #343434
+}
+
+page-title-area .page-title-content ul li::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    background-color: #343434;
+    width: 1px;
+    height: 20px;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg)
+}
+
+page-title-area .page-title-content ul li:last-child::before {
+    display: none
+}
+
+page-title-area .page-title-content ul li a {
+    color: #343434
+}
+
+page-title-area .page-title-content ul li a:hover {
+    color: #d80650
+}
+
+page-title-area .page-title-content ul .active {
+    color: #d80650
+}

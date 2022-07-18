@@ -1,0 +1,148 @@
+#main{
+    /* border: 2px solid rgb(255, 0, 0); */
+    /* border: 2px dashed rgb(198, 155, 123); */
+    background-color:antiquewhite;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px;
+    margin-top: 5px;
+    /* display:inline-block; */
+}
+
+select, input{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    outline-style: none;
+    text-align:justify;
+    padding: 5px 10px;
+}
+#f_date1{
+	width: 70px;
+	overflow:hidden;
+	
+}
+/* ------------------ */
+#movie{
+    /* border: 2px solid blue; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* ------------------ */
+#hall{
+    /* border: 2px solid green; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* ------------------ */
+#date{
+    /* border: 2px solid orange; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#datePicker{
+    border: 1px solid black;
+    outline-style: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align:center;
+    width: fit-content;
+}
+/* ------------------ */
+#time{
+    /* border: 2px solid pink; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.timePicker{
+    border: 1px solid black;
+    outline-style: none;
+    border-radius: 10px;
+    padding: 5px 0px;
+    width: 50px;
+    text-align:center;
+}
+/* ------------------ */
+#add{
+    /* border: 2px solid violet; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* ------------------ */
+#bar{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.3);    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* ------------------ */
+.data{
+    border: 2px dashed rgb(198, 155, 123);
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 5px;
+    margin-top: 10px;
+}
+.innerData{
+    border: 2px solid pink;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    height: inherit;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: justify;
+}
+.editor{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+
+.vl{
+    border: 1px solid rgb(198, 155, 123);
+    height: 100px;
+}
+/* ------------------ */
+#search{
+    /* border: 2px solid yellow; */
+    margin-top: 10px;
+}
+#searchBtn{
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#dateInput{
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline-style: none;
+    /* padding-top: 3px; */
+    /* padding-bottom: 3px; */
+}
+.selectBy{
+    border: 1px solid rgb(198, 155, 123);
+    background-color:antiquewhite;
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+    /* width: 500px; */
+    display:flex;
+    align-items: center;
+    /* justify-content:left; */
+}
+.selectBy span{
+    margin: 5px;
+}
+#title{
+    font-size: 25px;
+    margin-top: 5px;
+}

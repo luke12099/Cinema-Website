@@ -1,0 +1,130 @@
+html{overflow-y:scroll;}  
+*{text-decoration:none;margin:0; padding:0;}
+
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{bottom:0; display:block; width:100%; margin:0; padding:0; text-align:center; flex-grow: 1;}
+
+.row1, .row1 a{color:#C0BAB6; background-color:#750000;}
+.row2, .row2 a{color:#919191; background-color:#232323;}
+
+/*----------------------------------------------Generalise 頁面排版-------------------------------------*/
+
+#header, #copyright{display:inline-block; width:960px; margin:0 auto;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+
+/*----------------------------------------------Header 右上方的按鈕-------------------------------------*/
+
+#header{padding:2.5px 0; 
+  width:calc(100% - 40px);
+  }
+
+#header #hgroup{float:left; margin:0 0 20px 0;}
+#header #hgroup h1, #header #hgroup h2{font-weight:normal; font-style:normal; text-transform:none;}
+#header #hgroup h1{font-size:20px;}
+#header #hgroup h2{font-size:15px;}
+
+#header nav{display:block; float:right; margin:10px 0 0 0; padding:20px 0; color:#750000; 
+    background-color:#750000;opacity:1;}  /*下拉按鈕背景顏色*/
+#header nav ul{padding:0 20px;}
+#header nav li{display:inline; margin-right:20px; text-transform:uppercase;}
+#header nav li.last{margin-right:0;}
+#header nav li a{color:#C0BAB6; background: color #750000;;}
+#header nav li a:hover{color:#FF9900; background-color:#750000;}
+
+
+/*---------------------------------------------- 右上方標題下拉選單-------------------------------------*/
+/* 下拉按鈕 */
+.dropbtn {
+    background-color: #750000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* 定位下拉選項 */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* 預設下拉的選項 */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #282828;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* 下拉選項內容 */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* 游標指到下拉選項換色 */
+  .dropdown-content a:hover {background-color: #282828;}
+  
+  /* 游標指到下拉 */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* 游標指到下拉按鈕換色 */
+  .dropdown:hover .dropbtn {background-color: #282828;}
+
+
+
+  /*--------------------------------- 回到置頂按鈕 40px ------------------------------------------*/
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+
+/*--------------------------------- 客服按鈕 ------------------------------------------*/
+.cs {
+  bottom: 70px;
+  left: 94%;
+  transition: all 0.5s;
+  position: fixed;
+}
+.cs:hover {
+  transform: scale(1.2, 1.2);
+  /* 參數為水平,垂直 */
+  cursor: pointer;
+}

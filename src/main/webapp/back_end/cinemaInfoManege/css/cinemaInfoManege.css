@@ -1,0 +1,96 @@
+/* all */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+select{
+	text-align: center;
+}
+option{
+	text-align: center;
+}
+span{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
+.mainDiv{
+/*     border: 2px solid red; */
+}
+
+
+/* part */
+.editDiv{
+/*     border: 2px solid orange; */
+}
+
+.cnmID{
+/*     border: 2px solid rgb(255, 73, 255); */
+    margin-top: 10px;
+}
+.cnmID input{
+    width: 20px;
+    text-align: center;
+}
+.cnmDT{
+/*     border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.cnmDT textarea{
+    width: 50%;
+    height: 20%;
+    margin-left: 5px;
+}
+.cnmTEL{
+/*     border: 2px solid greenyellow; */
+    margin-top: 10px;
+}
+.cnmEM{
+/*     border: 2px solid yellow; */
+    margin-top: 10px;
+}
+.cnmEM input{
+    width: 30%;
+}
+.cnmLC{
+/*     border: 2px solid plum; */
+    margin-top: 10px;
+}
+.cnmLC input{
+    width: 50%;
+}
+.cnmTRP{
+/*     border: 2px solid skyblue; */
+    margin-top: 10px;
+}
+.cnmTRP input{
+    width: 50%;
+} 
+.send{
+/*     border: 2px solid gold; */
+    margin-top: 10px;
+}
+.send button{
+    width: 70px;
+    height: 30px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+

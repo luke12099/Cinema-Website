@@ -1,0 +1,140 @@
+/* 購票css================================================== */
+
+.guide2outer * {
+/* 	border: 2px solid red; */
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size:18px;
+}
+.guide2outer {
+	
+/*     margin: 20px; */
+    /* 跟其他的空隙 */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+/*     background: #750000; */
+}
+
+.guide2 {
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.guide2inner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.TKouter {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 95%;
+}
+
+.TKinner {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+.TKinner select{
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+/* 	border-radius: 10px; */
+	background: #750000;
+	color: white;
+	text-align: center;
+}
+
+tr {
+	height: 50px;
+}
+
+
+.tablebt:active {
+	transform: scale(0.95);
+}
+
+
+
+#f_date1 {
+	width: 110px;
+	overflow: hidden;
+}
+/* ================================================================= */
+
+
+.tablebtBlock{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color: #750000;
+    position: relative;
+    transition: all .3s linear;
+    margin-left: 50px;
+
+}
+.tablebtBlock > a{
+	padding-left: 20px;
+	padding-right: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: transparent;
+}
+.tablebtBlock::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+    /* border-radius: 10px; */
+}
+.tablebtBlock::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease;
+}
+.tablebtBlock:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+}
+.tablebtBlock:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+.tablebtBlock:hover{
+    background-color: red;
+}
